@@ -1,0 +1,80 @@
+page-profile {
+    .toolbar {
+        .bar-button {
+            display: none;
+        }
+        .toolbar-background-md,.toolbar-background-ios {
+            background: url('../assets/images/header-bar.png') no-repeat center/cover;
+            border: none;
+        }
+        .toolbar-content {
+            .toolbar-title {
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+    }
+    .addProfile-container {
+        position: relative;
+        height: 40%;
+        width: 100%;
+        background: #3d206c;
+        .coverpic {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            opacity: 0.6;
+        }
+        .profileImage {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -15px;
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+            border-radius: 90px;
+            -webkit-border-radius: 90px;
+            img {
+                height: 80px;
+                width: 80px;
+            }
+        }
+        .profileImage:after {
+            position: absolute;
+            background: url(../assets/images/addProfile.png) no-repeat center/cover;
+            content: "";
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+    }
+    form {
+        .text-input-md {
+            font-size: 14px;
+            text-align: center;
+        }
+        .button-md {
+            background-color: #ff2d55;
+        }
+        .list-md.selectBox {
+            position: relative;
+            label {
+                float: left;
+                margin-top: 10px;
+                color: #999;
+                font-size: 16px;
+            }
+        }
+        .select-md {
+            float: right;
+        }
+    }
+   .action-sheet-md .action-sheet-title{
+       text-align: center;
+   }
+}

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Set Your Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="addProfile-container">
+    <div class="coverpic" [style.backgroundImage]="'url(' + bgImage + ')'"></div>
+    <div class="profileImage" (click)="profileImage()"><img [src]="avatar" alt="profile"></div>
+  </div>
+  <form (submit)="addProfileInfo(name.value,mobile.value,gen.value,dob.value)" novalidate padding>
+    <p></p>
+    <ion-list>
+      <ion-item>
+        <ion-input #name type="text" placeholder="Enter Your Display Name"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-input #mobile type="number" placeholder="Enter Mobile Number"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-list class="selectBox">
+      <label>Select Gender</label>
+      <ion-select [(ngModel)]="gender" [ngModelOptions]="{standalone: true}" #gen>
+        <ion-option value="0">Male</ion-option>
+        <ion-option value="1">Female</ion-option>
+      </ion-select>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-label>Date Of Birth</ion-label>
+        <ion-datetime displayFormat="DD/MM/YYYY" #dob [(ngModel)]="myDate" [ngModelOptions]="{standalone: true}"></ion-datetime>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <button type="submit" ion-button full round>Next</button>
+    </ion-list>
+  </form>
+</ion-content>

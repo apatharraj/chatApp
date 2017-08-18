@@ -1,0 +1,35 @@
+page-contacts {
+    .toolbar {
+        .bar-button {
+            display: none;
+        }
+        .toolbar-background-md,.toolbar-background-ios {
+            background: url('../assets/images/header-bar.png') no-repeat center/cover;
+            border: none;
+        }
+        .toolbar-content {
+            .toolbar-title {
+                color: #fff;
+                font-size: 2rem;
+            }
+        }
+    }
+    .no-element {
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100vh;
+        margin-top: -63vh;
+        p {
+            font-size: 16px;
+            color: rgba(66, 66, 66, 0.74);
+            line-height: 28px;
+            font-weight: 500;
+        }
+    }
+   ion-fab[bottom][edge].fab-icon{
+        bottom: 20px;
+    }
+}

@@ -1,0 +1,18 @@
+page-add-contact {
+    .toolbar-background-md,
+    .toolbar-background-ios {
+        background: #8f84fe;
+        border: none;
+    }
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+        color: #fff;
+    }
+    .toolbar-content {
+        .toolbar-title {
+            color: #fff;
+        }
+    }
+    div.searchbar{
+        background-color: #8f84fe;
+    }
+}

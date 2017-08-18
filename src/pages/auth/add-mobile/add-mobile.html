@@ -1,0 +1,18 @@
+<ion-content>
+  <div padding class="addMobile">
+    <h5>Verify your phone number</h5>
+    <p>
+      App will send an SMS message to verify your phone number. Enteryour phone number:
+    </p>
+    <form (submit)="addMobile()" novalidate>
+      <ion-list>
+        <ion-item>
+          <ion-input #mobile type="text" placeholder="Mobile No"></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <button type="submit" ion-button full round>NEXT</button>
+      </ion-list>
+    </form>
+  </div>
+</ion-content>

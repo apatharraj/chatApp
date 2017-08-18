@@ -1,0 +1,24 @@
+page-add-mobile {
+    text-align: center;
+    .scroll-content div.addMobile {
+        padding-top: 80px;
+        h5 {
+            color: #8f84fe;
+        }
+        p {
+            padding: 26px 0 8px;
+        }
+        button {
+            background-color: #ff2d55;
+        }
+        input.text-input{
+            text-align: center;
+        }
+        .button-md:hover:not(.disable-hover){
+            background-color: #ff2d55;
+        }
+        .list-md{
+            margin-bottom: 40px;
+        }
+    }
+}
